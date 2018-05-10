@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700" rel="stylesheet">   
+    <title>Ocean Blue Massage Therapy</title>
+    <meta name="description" content="Best spa ever">
+    <meta name="keywords" content="Spa, Massages, Florida">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/styles/styles-20f3350913.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="site-header">
+    <div class="wrapper">
+            <div class="site-header__menu-icon">
+                    <div class="site-header__menu-icon__middle"></div>
+            </div>
+            <div class="site-header__menu-logo">
+                <div class="site-header__logo-container">
+                    <p class="site-header__logo-text">Ocean Blue<br> Massage Therapy</p>
+                </div>
+            </div>
+        <div class="site-header__menu">  
+            <nav class="primary-nav primary-nav--pull-right">
+                <ul>
+                    <li><a class="site-header__menu-links" href="./index.html">About Us</a></li>
+                    <li><a class="site-header__menu-links" href="./services.html">Services</a></li>
+                    <li><a class="site-header__menu-links" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="large-ocean-top large-ocean-top__contact">
+    <div class="wrapper">
+        <div class="wrapper__Hometitle">   
+            <p class="large-ocean-top__title"> <span class="large-ocean-top__titleBlue">Ocean</span> Blue<br> 
+                <span class="large-ocean-top__titleBlue">Massage</span> Therapy</p>
+            <p class="large-ocean-top__subtitleBar">Contact Us</p>
+        </div>
+    </div>
+</div>
+
+<div class="large-ocean-section" id="about">
+    <div class="wrapper wrapper__space">
+        <div class="wrapper__title">
+            <p class="large-ocean-top__titleBlack">Contact Us</p>
+            <div class="icon">
+                    <img class="icon__circle" src="assets/images/small-waves.png">
+            </div>
+            <p class="large-ocean-top__subtitle">Make an Appointment Now</p>
+        </div>
+        <p id="map">
+        </p>
+         <div class="forms-contact">
+            <form action="http://formspree.io/ocbluemt@gmail.com" method="POST">
+                <div class="form-group row">
+                        <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm"><span style="font-weight: bold;">Name</span></label>
+                            <div class="col-sm-10">
+                                <input type="text" name="Name" class="form-control form-control-sm" id="smFormGroupInput" placeholder="Erica Sloan" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                        <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm"><span style="font-weight:bold;">Email</span></label>
+                            <div class="col-sm-10">
+                                <input type="email" name="_replyto" class="form-control form-control-sm" id="smFormGroupInput" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                        <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm"><span style="font-weight:bold;">Subject</span></label>
+                            <div class="col-sm-10">
+                                <input type="text" name="Subject" class="form-control form-control-sm" id="smFormGroupInput" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                        <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm"><span style="font-weight: bold;">Message</span></spanMessage></label>
+                            <div class="col-sm-10">
+                                <input type="text" name="message" class="form-control form-control-sm" id="form-control-sm" placeholder="Hello! Is it possible to schedule an appointment for tomorrow at (time)?" required>
+                            </div>
+                        </div>
+                        
+                        <input type="submit" class="btn btn-primary" value="Send Message">
+            </form>
+
+            <div class="forms-contact__address">
+                <h5>Contact Info</h5>
+                <p>
+                    <i class="far fa-address-book"></i> 1851 W Indiantown Rd. <br>#103, 
+                    Jupiter, FL 33458 <br>
+                    <i class="fas fa-mobile-alt"></i> (561) 203 - 7766<br>
+                    <i class="far fa-envelope"></i> ocbluemt@gmail.com
+                </p>
+            </div>
+            <div class="forms-contact__hours">
+                <h5>Opening Hours</h5>
+                <p>
+                    <span style="font-weight: bold;">Mon - Sat:</span> 9 AM ~ 9 PM <br>
+                    <span style="font-weight: bold;">Sun:</span> 11 AM ~ 7 PM
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer-container">
+    <div>
+        <img class="footer-container__icon" src="assets/images/smallwhitewaves.png">
+        <p class="footer-container__text">
+            Copyright &copy; 2018 Ocean Blue Massage Therapy
+        </p>
+    </div>
+</footer>
+
+<script>
+    function initMap() {
+      var uluru = {lat: 26.934575, lng: -80.125467};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: uluru,
+        disableDefaultUI: true,
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: true,
+        fullscreenControl: true
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcre9A-_z1nrAHZpWizj9cvxepN23NRuk&callback=initMap"
+type="text/javascript"></script>
+<script src="assets/scripts/App-8737825900.js"></script>
+</body>
+</html>
